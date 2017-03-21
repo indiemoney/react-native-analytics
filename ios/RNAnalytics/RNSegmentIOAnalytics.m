@@ -37,6 +37,14 @@ RCT_EXPORT_METHOD(alias:(NSString*)userId) {
 }
 
 /*
+ https://segment.com/docs/libraries/ios
+ Not supported by segment iOS library
+ */
+RCT_EXPORT_METHOD(anonymousId) {
+
+}
+
+/*
  https://segment.com/docs/libraries/ios/#track
  */
 RCT_EXPORT_METHOD(track:(NSString*)event properties:(NSDictionary *)properties) {

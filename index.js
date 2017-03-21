@@ -46,6 +46,14 @@ export default {
     },
 
     /*
+     * https://segment.com/docs/libraries/ios/#anonymousid
+     * https://segment.com/docs/libraries/android/#anonymousid
+     */
+    anonymousId: function() {
+        NativeRNSegmentIOAnalytics.anonymousId();
+    },
+
+    /*
      * https://segment.com/docs/libraries/ios/#track
      * https://segment.com/docs/libraries/android/#track
      */
